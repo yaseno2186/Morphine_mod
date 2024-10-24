@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+     "item": "minecraft:iron_block"
+    },
+
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "pattern": [
+    "BIB",
+    " S ",
+    " S "
+    ],
+  "result": {
+    "count": 1,
+    "id": "morphine:iron_hammer"
+  }
+}
