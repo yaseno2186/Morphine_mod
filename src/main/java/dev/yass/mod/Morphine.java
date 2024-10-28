@@ -2,6 +2,7 @@ package dev.yass.mod;
 
 import com.mojang.logging.LogUtils;
 import dev.yass.mod.item.HammersItems;
+import dev.yass.mod.item.ModCreativeModTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -37,6 +38,7 @@ public class Morphine
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModTab.register(modEventBus);
         HammersItems.register(modEventBus);
 
         // Register the item to a creative tab
